@@ -6,9 +6,10 @@ from flowershop.FlowerShop import FlowerShop
 
 TheFlowerShop = FlowerShop()
 
-print(TheFlowerShop.refill_inventory())
-
 print(len(TheFlowerShop.inventory))
-# print(TheFlowerShop.inventory)
 
-print("hello")
+TheFlowerShop.refill_inventory()
+
+bouquet = TheFlowerShop.create_boquet(5)
+
+print(bouquet)
