@@ -23,11 +23,14 @@ class FlowerShop:
 
     
     def create_boquet(self,number_of_flowers):
-        selected_flowers = [random.sample(self.inventory,number_of_flowers)]
+        selected_flowers = (random.sample(self.inventory,number_of_flowers))
         myboquet = Boquet()
+        # print(" before appending",myboquet.get_size())
         for flower in selected_flowers:
             myboquet.contents.append(flower)
         
+        # print("len after appending", myboquet.get_size())
+        # print("mybouquet contains", myboquet)
         return myboquet
 
         

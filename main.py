@@ -14,8 +14,6 @@ TheFlowerShop.refill_inventory()
 
 mybouquet = TheFlowerShop.create_boquet(5)
 
-# print(mybouquet)
+# print(mybouquet.contents)
 
-# mybouquet = Boquet()
-
-# print(mybouquet)
+print(mybouquet.get_size())
