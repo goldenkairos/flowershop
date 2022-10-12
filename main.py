@@ -1,6 +1,6 @@
 from flowershop.Flower import Flower
 from flowershop.FlowerShop import FlowerShop
-
+from flowershop.Boquet import Boquet
 
 
 
@@ -10,6 +10,12 @@ print(len(TheFlowerShop.inventory))
 
 TheFlowerShop.refill_inventory()
 
-bouquet = TheFlowerShop.create_boquet(5)
+# print(len(TheFlowerShop.inventory))
 
-print(bouquet)
+mybouquet = TheFlowerShop.create_boquet(5)
+
+# print(mybouquet)
+
+# mybouquet = Boquet()
+
+# print(mybouquet)

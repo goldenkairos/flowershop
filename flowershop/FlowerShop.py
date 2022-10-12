@@ -1,5 +1,6 @@
 from flowershop.Flower import Flower
 import random
+from flowershop.Boquet import Boquet
 
 class FlowerShop:
     def __init__(self):
@@ -22,8 +23,13 @@ class FlowerShop:
 
     
     def create_boquet(self,number_of_flowers):
-        boquet = [random.sample(self.inventory,number_of_flowers)]
-        return boquet
+        selected_flowers = [random.sample(self.inventory,number_of_flowers)]
+        myboquet = Boquet()
+        for flower in selected_flowers:
+            myboquet.contents.append(flower)
+        
+        return myboquet
+
         
 
 red_rose = Flower("redrose","red")
