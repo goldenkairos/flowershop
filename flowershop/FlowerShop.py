@@ -19,7 +19,7 @@ class FlowerShop:
                 diff = 2 - count
                 if diff != 0:
                     self.inventory.append(flower)
-                    print(default_inventory)
+                    # print(default_inventory)
 
     
     def create_boquet(self,number_of_flowers):
@@ -28,6 +28,7 @@ class FlowerShop:
         # print(" before appending",myboquet.get_size())
         for flower in selected_flowers:
             myboquet.contents.append(flower)
+            self.inventory.remove(flower)
         
         # print("len after appending", myboquet.get_size())
         # print("mybouquet contains", myboquet)
