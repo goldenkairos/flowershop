@@ -11,7 +11,7 @@ class FlowerShop:
                      white_rose:2,
                      yellow_sunflower:2,
                      yellow_tulip:2,
-                     blue_tulip:2, }
+                     blue_tulip:2 }
 
         while len(default_inventory) < 10:
             for flower in default_dict:
