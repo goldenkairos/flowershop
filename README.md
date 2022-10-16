@@ -1,4 +1,5 @@
-Let's have you create a class called FlowerShop. This FlowerShop will contain an attribute, inventory, which will be a list of Flowers. The FlowerShop will have 2 class methods: refill_inventory and create_boquet.
+#WAVE 1
+create a class called FlowerShop. This FlowerShop will contain an attribute, inventory, which will be a list of Flowers. The FlowerShop will have 2 class methods: refill_inventory and create_boquet.
 
 refill_inventory will take no parameters and it will not return anything. This method will check the existing inventory and check if it has 2 of each Flower type in each color (I'll write more about the flowers/colors later). If any flowers are missing, they are added back to the  inventory.
 
@@ -23,3 +24,10 @@ Your main method will do the following:
  - Call the FlowerShop's create_boquet method with a number_of_flowers argument of 5.
  - Print the FlowerShop's inventory
  - Print the Boquet returned by the create_boquet call
+
+#WAVE 2
+
+Add an attribute to Flowers, called cost. Optional: Change your Flower initializer to use a default cost of 10.
+Add a class method to Boquet, called get_cost. This method will return the sum of the cost of the flowers in the Boquet.
+Update the main method to also print out the total cost of your boquet
+Optional: override Flower's _str_ method so it prints nicely, eg "blue tulip"

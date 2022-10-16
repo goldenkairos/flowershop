@@ -16,3 +16,6 @@ print("List of flowers in my bouquet:", mybouquet.contents)
 
 TheFlowerShop.refill_inventory()
 print("Size of inventory after refill method",len(TheFlowerShop.inventory))
+
+
+mybouquet.get_cost()
