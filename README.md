@@ -31,3 +31,11 @@ Add an attribute to Flowers, called cost. Optional: Change your Flower initializ
 Add a class method to Boquet, called get_cost. This method will return the sum of the cost of the flowers in the Boquet.
 Update the main method to also print out the total cost of your boquet
 Optional: override Flower's _str_ method so it prints nicely, eg "blue tulip"
+
+ Make a couple of additional changes:
+Let's have the flower's type include only their species name, like "tulip", instead of also containing the color. For example, this line should be red_rose = Flower("rose", "red")
+Let's rework the refill_inventory method to make better use of your ideas:
+I really like that you used a dictionary to keep track of your inventory via default_dict! It makes a lot of sense to use the system of flower->count and I think you should expand upon your great idea! I'll break it down into a few smaller pieces to help you see your plan all the way through:
+A) Change your default_inventory to be exactly like the default_dict (copy/paste works!)
+B) Now you can delete the old default_dict and just use the new, dictionary form of default_inventory
+C) Adjust your refill_inventory logic to make more efficient use of your two dictionaries (default_inventory and self.inventory). 
