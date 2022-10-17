@@ -39,3 +39,9 @@ I really like that you used a dictionary to keep track of your inventory via def
 A) Change your default_inventory to be exactly like the default_dict (copy/paste works!)
 B) Now you can delete the old default_dict and just use the new, dictionary form of default_inventory
 C) Adjust your refill_inventory logic to make more efficient use of your two dictionaries (default_inventory and self.inventory). 
+
+
+##Minh's note (10/16)
+
+1) self.inventory = default_dictionary. If we modify the self.dictionary, does that mean we also modify the default_dictionary as well? My assumption is no as theFlowerShop is an instance of Flower so they (self.inventory vs. default_dictionary) should have 2 different ids
+2) create_bouquet method: what function to allow us randomly choose the key base on the number of value? My approach is to creating an additional list with key*value but I run into ValueError on * operator)

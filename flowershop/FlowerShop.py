@@ -4,11 +4,12 @@ from flowershop.Boquet import Boquet
 
 class FlowerShop:
     def __init__(self):
-        self.inventory = {red_rose:2,
-                white_rose:2,
-                yellow_sunflower:2,
-                yellow_tulip:2,
-                blue_tulip:2 }
+        self.inventory = default_inventory
+        # {red_rose:2,
+        #         white_rose:2,
+        #         yellow_sunflower:2,
+        #         yellow_tulip:2,
+        #         blue_tulip:2 }
 
     # def refill_inventory(self):
     #     while len(default_inventory) < 10:
