@@ -32,6 +32,7 @@ class FlowerShop:
     
     def create_boquet(self,number_of_flowers):
         flower_list = [red_rose, red_rose, white_rose, white_rose,yellow_sunflower,yellow_sunflower,yellow_tulip,yellow_tulip]
+        # flower_list = [key*value for key,value in default_inventory.items()]
         selected_flowers = (random.sample(flower_list,number_of_flowers))
         # print("list of randomly chosen flowers are",selected_flowers)
         myboquet = Boquet()
@@ -47,6 +48,7 @@ white_rose = Flower("rose","white")
 yellow_sunflower = Flower("sunflower","yellow")
 yellow_tulip = Flower("tulip", "yellow")
 blue_tulip =Flower("tulip", "blue")
+
 
 default_inventory = {red_rose:2,
                 white_rose:2,
